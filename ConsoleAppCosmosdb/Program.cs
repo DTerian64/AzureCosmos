@@ -44,7 +44,7 @@ ChangeFeedProcessor changeFeedProcessor = builder
     await changeFeedProcessor.StartAsync();
 
 Console.WriteLine("Change Feed Processor started. Press any key to stop.");
-Console.ReadKey();
+Console.Read();
 
 /*delete
 var query = products.GetItemLinqQueryable<Product>().ToFeedIterator();
