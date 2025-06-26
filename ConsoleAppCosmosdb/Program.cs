@@ -11,8 +11,8 @@ using ConsoleAppCosmosdb.Models;
 using ConsoleAppCosmosdb.Utilities;
 
 
-string endpointUri = "https://ridesharewv64cosmos.documents.azure.com:443/";
-string primaryKey = await AzureUtility.GetRideshareCosmosPrimaryKey();// "QOEaAqG9XwpWOQC1dkaihYORnAP89jmZVtX8eo5Dp929ofVA2trpqy4NUTYm85tdpD7RhU8f3SS5ACDbkPKtfw==";
+string endpointUri = await AzureUtility.GetRideshareCosmosEndPoint();
+string primaryKey = await AzureUtility.GetRideshareCosmosPrimaryKey();
 
 
 CosmosClientOptions options = new CosmosClientOptions { AllowBulkExecution = true };
