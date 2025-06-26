@@ -11,22 +11,23 @@ namespace ConsoleAppCosmosdb.Utilities
        public async static Task<string> GetRideshareCosmosPrimaryKey()
         {
             string keyVaultName = "RideshareKeyVault2";
-            string secretName = "RIDESHARE-COSMOS-PRIMARY-KEY";
-            string kvUri = $"https://{keyVaultName}.vault.azure.net";
+            string secretName = "RIDESHARE-COSMOS-PRIMARY-KEY";            
+            return await GetSecretFromKeyVault(keyVaultName, secretName);
+            
+        }
+        public async static Task<string> GetRideshareCosmosEndPoint()
+        {
+            string keyVaultName = "RideshareKeyVault2";
+            string secretName = "RIDESHARE-COSMOS-ENDPOINT";                        
+            return await GetSecretFromKeyVault(keyVaultName, secretName);
+        } 
 
+        private async static Task<string> GetSecretFromKeyVault(string keyVaultName, string secretName)
+        {
+            string kvUri = $"https://{keyVaultName}.vault.azure.net";
             var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
             KeyVaultSecret secret = await client.GetSecretAsync(secretName);
-
             return secret.Value;
-        }
-        public static string GetEnvironmentVariable(string variable)
-        {
-            var value = Environment.GetEnvironmentVariable(variable);
-            if (string.IsNullOrEmpty(value))
-            {
-                throw new ArgumentNullException($"Environment variable '{variable}' is not set.");
-            }
-            return value;
         }
     }
 }
