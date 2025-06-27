@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "function_app_cosmosdb64": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7274",
+      "launchBrowser": false
+    }
+  }
+}
