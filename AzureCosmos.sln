@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppCosmosdb", "ConsoleAppCosmosdb\ConsoleAppCosmosdb.csproj", "{482EEF76-59AD-413A-B5EC-C80BFB4D05AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosUtilities", "CosmosUtilities\CosmosUtilities.csproj", "{4254E7F2-555D-40BB-9F29-D8AC45B8CC91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{482EEF76-59AD-413A-B5EC-C80BFB4D05AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{482EEF76-59AD-413A-B5EC-C80BFB4D05AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{482EEF76-59AD-413A-B5EC-C80BFB4D05AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4254E7F2-555D-40BB-9F29-D8AC45B8CC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4254E7F2-555D-40BB-9F29-D8AC45B8CC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4254E7F2-555D-40BB-9F29-D8AC45B8CC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4254E7F2-555D-40BB-9F29-D8AC45B8CC91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

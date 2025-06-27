@@ -8,7 +8,7 @@ using Microsoft.Azure.Cosmos.Linq;
 using System.ComponentModel;
 using System.Reflection;
 using ConsoleAppCosmosdb.Models;
-using ConsoleAppCosmosdb.Utilities;
+using CosmosUtilities.KeyVault;
 
 
 string endpointUri = await AzureUtility.GetRideshareCosmosEndPoint();

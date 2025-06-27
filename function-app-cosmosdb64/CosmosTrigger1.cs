@@ -11,7 +11,7 @@ public class CosmosTrigger1
     public static void Run([CosmosDBTrigger(
         databaseName: "cosmicworkd",
         containerName: "products",
-        Connection = "ridesharewv64cosmos_DOCUMENTDB",
+        Connection = "ridesharewv64cosmos-DOCUMENTDB",
         LeaseContainerName = "productleases",
         CreateLeaseContainerIfNotExists = true)] IReadOnlyList<MyDocument> input,
         FunctionContext context)
